@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!--- Responsivo -->
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title> MENU DE NAVEGAÇÃO</title>    
+    <link rel="stylesheet" href="style-menu.css">
+</head>
+<body>
+    <nav class="menu-navegacao">
+       <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../SOBRE/sobre.html">Sobre</a></li>
+            <li><a href="../VOLUNTARIADO/Voluntariado.html">Contato</a></li>
+            <li><a href="../DOACOES/Doacoes.html">Produtos</a></li>
+            <li><a href="../CONTATO/Contato.html">Projeto</a></li>
+        </ul>
+</body>
+</html>
