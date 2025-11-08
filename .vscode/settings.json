@@ -1,4 +1,9 @@
 {
-    "liveServer.settings.port": 5500,
-    "liveServer.settings.CustomBrowser": "chrome"
+    "liveServer.settings.port": 8080,
+    "liveServer.settings.root": "/",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.https": false,
+    "liveServer.settings.host": "localhost",
+    "liveServer.settings.useLocalIp": true,
+    "liveServer.settings.donotShowInfoMsg": true
 }
