@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Voluntários</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-menu.css">
+     <link rel="stylesheet" href="../css/style-form.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="../imagens/sementes-do-amanha.jpg" width="250" height="250">
+        </div>
+       <nav class="menu-navegacao">
+            <a href="#" class="titulo">Projeto Sementes do Amanhã</a>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Voltar à Home</a></li>
+     
+                </ul>
+        </nav>    
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <main>
+        <section class="signup-section">
+            
+            <h1>Cadastro de Voluntários</h1>
+            
+            <div class="success-message" id="successMessage">
+                ✅ Cadastro realizado com sucesso! Entraremos em contato em breve.
+            </div>
+            
+            <form id="VoluntarioForm" onsubmit="handleSubmit(event)">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone *</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="idade">Idade *</label>
+                        <input type="number" id="idade" name="idade" min="16" max="100" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    
+                    <legend>Disponibilidade</legend>
+                    
+                    <div class="form-group">
+                        
+                        <label for="disponibilidade">Quando você pode ajudar? *</label>
+                        
+                        <select id="disponibilidade" name="disponibilidade" required>
+                            <option value="">Selecione...</option>
+                            <option value="fins-de-semana">Fins de semana</option>
+                            <option value="dias-uteis">Dias úteis</option>
+                            <option value="flexivel">Horário flexível</option>
+                            <option value="pontual">Ações pontuais</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                    
+                        <label for="area-interesse">Área de Interesse *</label>
+                    
+                        <select id="area-interesse" name="area-interesse" required>
+                            <option value="">Selecione...</option>
+                            <option value="distribuicao-alimentos">Distribuição de Alimentos</option>
+                            <option value="educacao">Educação e Capacitação</option>
+                            <option value="saude">Apoio à Saúde</option>
+                            <option value="administrativo">Apoio Administrativo</option>
+                            <option value="qualquer">Qualquer área</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    
+                    <legend>Informações Adicionais</legend>
+                    
+                    <div class="form-group">
+                        <label for="experiencia">Você já participou de ações voluntárias antes?</label>
+                        <textarea id="experiencia" name="experiencia" placeholder="Conte-nos sobre sua experiência..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="motivacao">Por que você quer ser voluntário?</label>
+                        <textarea id="motivacao" name="motivacao" placeholder="Compartilhe sua motivação..."></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn-primary">Enviar Cadastro</button>
+                <button class="btn-primary" onclick="limparTabela()">Limpar Tabela</button>
+            </form>
+           <!-- Lista de Voluntários Cadastrados -->
+            <section class="Voluntarios-lista">
+                <h2>Voluntários Cadastrados</h2>
+                <div id="tabelaVoluntarios">                   
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+    <!-- Rodape -->
+    <footer class="rodape">
+        <p>&copy; 2025 Organização de Voluntários. Todos os direitos reservados.</p>
+    <p>Feito com &#10084;&#65039; para transformar vidas</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+   
+}
+
+/* Navegação */
+.menu-navegacao{
+    background: #333;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none  ;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+.nav-links a:hover{
+    background-color: #555;
+}
+
+.nav-links a.link{
+    background-color: #f37d15;
+}
+
+.conteudo{
+    padding: 20px;
+    text-align: center;
+    color: tomato;
+}
+
+
+/* Responsivo */
+.burger{
+    display:none;
+    background:transparent;
+    border:none;
+    color:var(--muted);
+    font-size:1.2rem;
+    padding:.4rem;
+    border-radius:8px
+}
+
+.nav-links.mobile{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    padding:.6rem
+}
+
+@media (max-width:880px){
+  .menu-nav .nav-links{display:none}
+  .burger{display:inline-flex}
+  .nav-links.mobile{display:flex;flex-direction:column;background:transparent;padding:.6rem}
+  .nav-links.mobile a{padding:.8rem;border-radius:6px}
+  .menu-nav{padding:.4rem 0}
+}

@@ -1,0 +1,152 @@
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+   
+}
+
+.rodape{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}   
+
+.cabecalho{
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}   
+
+.conteudo{
+    background: linear-gradient(rgba(233, 235, 236, 0.989), rgba(87, 7, 167, 0.8)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f0f0" width="1200" height="600"/></svg>');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+
+.conteudo-page {
+    background: linear-gradient(135deg, #0de587 0%, #764ba2 100%);
+    padding: 4rem 2rem 4rem;
+    text-align: center;
+    color: white;
+    
+}
+
+
+.conteudo-content, .signup-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+
+.conteudo h1,
+.conteudo-page h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+
+.conteudo p,
+.conteudo-page p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons{
+    display: flex;
+    flex-direction: row;/*lado a lado*/
+    gap: 1.5rem; /* espaços entre os botões*/
+    justify-content: center;/* centralizados os horizontes*/
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.btn-primary, .btn-secondary{
+    flex: 1 1 200px;
+    max-width: 250px;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.btn-primary{
+    background: #667eea;
+    color: white;
+    display: inline-block; 
+}
+.btn-secondary{
+    background: #764ba2;
+    color: white;
+}
+
+.btn-primary:hover, .btn-secondary:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0, 0, 0.3);
+
+}
+.btn-primary::after, .btn-secondary::after{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255, 0.15);
+    transform: rotate(45deg);
+    transition: all 0.5 ease;
+}
+.btn-primary:hover::after, .btn-secondary:hover::after{
+    top:-20px;
+    left: -20px;
+
+}
+
+.container-pai {
+   display: flex;          /* Ativa o Flexbox */
+   justify-content: space-around; /* Distribui o espaço entre os itens */
+    gap: 20px;              /* Espaçamento entre os contêineres */
+    padding: 20px;
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin: top 20px;
+}
+
+.container-filho {
+    flex: 1;                /* Faz com que ambos ocupem o mesmo espaço disponível */
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
